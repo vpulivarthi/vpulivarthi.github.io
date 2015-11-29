@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <title>Battery Alert</title>
+  <meta charset="utf-8">
+</head>
+<body>
+  <p>******************************************************************************* <br>
+    Author: Vijay Kumar Pulivarthi <br>
+    *******************************************************************************</p>
+    <hr>
+    <p style="font:verdana"><u>Battery Alert</u></p> <br>
+    <p onclick="myFunction(event)"></p>
+    <p><span id="demo"></span></p>
+    <script>
+function myFunction(event) {
+    var n = event.timeStamp;
+    document.getElementById("demo").innerHTML = n;
+}
+</script>
+    <p>Once your laptop or notebook battery is down, everyone plugin to charge it pretty
+    immediately. But most of them(hmm .. i gues everyone) leave it plugged and forget to
+    unplug the cable even after the device is charged full. I've been there too.
+    Result of this ? a new battery.</p>
+    <p>When you leave your laptop plugged for a long time, your battery stamina decreases.
+      Not rapidly but gradually overtime. This leads you buy a new battery. What if you
+      had a simple piece code that run just to track the level of your battery while charging.</p>
+      <p>Here is that piece of code(technically, a VB Script) that can track the percentage of
+        charging of your device. This is how it works:
+      </p>
+      <p><ol>
+        <li>Download the file provided below named "Battery Alert.md".</li>
+        <li>Right click on the file and open it with your favourite text editor. Notepad can get the work done too.</li>
+        <li>Now save it with "Save as" option. Give it any name you want and save it with .vbs extension.</li>
+        <li>Change "save as type" to "All files". Click "save".</li>
+        <li>Now move this file to "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp\" into StartUp folder.
+        When you restart your computer the file initiates from the StartUp items.</li>
+        <li>Restart your laptop. The script is ready to work.</li>
+      </ol>
+    </p>
+    <p>The script is set to default of 95%. If your laptop reaches 96% the script throws you an alert indicating to unplug the device.
+      You can modify the script to specify the level you want to be notified with an alert. To do this, go to the StartUp folder and
+      open the script with any text editor and change the values where it says "ipercent > 95". Set the value according to your need.
+      Vola! you are all set now. Enjoy your day.
+    </p>
+    <br>
+    <p>Download</p>
+    <a href="Resources/Battery ALert.md">Battery Alert.md</a>
+</body>
+</html>
